@@ -54,6 +54,17 @@ export  default function AdminLeavesPage() {
       .catch(err => console.error(err))
       .finally(() => setLoading(false))
   }, [])
+  useEffect(() => {
+      if (loading) {
+        Swal.fire({
+          title: 'Carregando Dispensas...',
+          allowOutsideClick: false,
+          didOpen: () => Swal.showLoading()
+        });
+      } else {
+        Swal.close();
+      }
+    }, [loading]);
 const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files?.[0]) setFile(e.target.files[0]);
   };
