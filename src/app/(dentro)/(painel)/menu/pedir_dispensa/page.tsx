@@ -88,7 +88,7 @@ useEffect(() => {
     if (file) {
       Swal.fire({ title: 'Carregando PDF...', allowOutsideClick: false, didOpen: () => Swal.showLoading() });
     }
-    const res = await fetch("https://3b63-102-214-36-178.ngrok-free.app/api/dispensa/create/", {
+    const res = await fetch("https://fc46-102-218-85-18.ngrok-free.app/api/dispensa/create/", {
       method: "POST",
       headers: { Authorization: `Bearer ${accessToken}` },
       body,
@@ -165,7 +165,7 @@ useEffect(() => {
               <TableCell>{l.admin_comentario || "—"}</TableCell>
               <TableCell>
                 {l.justificativo ? (
-                  <a  href={`https://3b63-102-214-36-178.ngrok-free.app/api/media/justificativo/${l.justificativo?.split('/').pop()}`} target="_blank" rel="noopener noreferrer">Ver PDF</a>
+                  <a  href={`https://fc46-102-218-85-18.ngrok-free.app/api/media/justificativo/${l.justificativo?.split('/').pop()}`} target="_blank" rel="noopener noreferrer">Ver PDF</a>
                 ) : "—"}
               </TableCell>
               <TableCell>{l.funcionario_nome}</TableCell>
