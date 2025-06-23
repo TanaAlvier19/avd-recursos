@@ -109,7 +109,7 @@ const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
           <p><strong>Status:</strong> {l.status}</p>
           <p><strong>Comentário:</strong> {l.admin_comentario || '-'}</p>
           <p><strong>Justificativo:</strong>  {l.justificativo ? (
-                    <a href={`https://3b63-102-214-36-178.ngrok-free.app/api/media/justificativo/${l.justificativo?.split('/').pop()}`} target="_blank">Ver PDF</a>
+                    <a href={`https://fc46-102-218-85-18.ngrok-free.app/api/media/justificativo/${l.justificativo?.split('/').pop()}`} target="_blank">Ver PDF</a>
                   ) : "—"}</p>
           <p><strong>Ações:</strong> {l.status === "pendente" ? (
                     <>
@@ -152,7 +152,7 @@ const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
                 <TableCell>{l.admin_comentario || '—'}</TableCell>
                 <TableCell>
                   {l.justificativo ? (
-                             <a  href={`https://3b63-102-214-36-178.ngrok-free.app/api/media/justificativo/${l.justificativo?.split('/').pop()}`} target="_blank" rel="noopener noreferrer">Ver PDF</a>
+                             <a  href={`https://fc46-102-218-85-18.ngrok-free.app/api/media/justificativo/${l.justificativo?.split('/').pop()}`} target="_blank" rel="noopener noreferrer">Ver PDF</a>
                     
                   ) : "—"}
                 </TableCell>
