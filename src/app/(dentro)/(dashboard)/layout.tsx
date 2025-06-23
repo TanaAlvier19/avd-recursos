@@ -13,7 +13,7 @@ export default function DashboardLayout({
   return (
     <div className="h-screen flex">
 
-      <div className="flex-col w-[20%] md:w-[8%] bg-blue-500 hidden md:flex lg:w-[14%] xl:w-[3%] ">
+      <div className="flex-col w-[20%] md:w-[8%] bg-blue-500 hidden md:flex lg:w-[14%] xl:w-[10%] ">
         <Menu />
       </div>
         {abrirMenu && (
